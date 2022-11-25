@@ -18,18 +18,25 @@ public class Aula04Operadores {
         boolean isDezIgualVinte = 10 == 20;
         boolean isDezIgualDez = 10 == 10;
         boolean isDezDiferenteDez = 10 != 10;
-        System.out.println("isDezMaiorQueVinte "+isDezMaiorQueVinte);
-        System.out.println("isDezMenorQueVinte "+isDezMenorQueVinte);
-        System.out.println("isDezIgualVinte "+isDezIgualVinte);
-        System.out.println("isDezIgualDez "+isDezIgualDez);
-        System.out.println("isDezDiferenteDez "+isDezDiferenteDez);
+        System.out.println("isDezMaiorQueVinte " + isDezMaiorQueVinte);
+        System.out.println("isDezMenorQueVinte " + isDezMenorQueVinte);
+        System.out.println("isDezIgualVinte " + isDezIgualVinte);
+        System.out.println("isDezIgualDez " + isDezIgualDez);
+        System.out.println("isDezDiferenteDez " + isDezDiferenteDez);
 
         // && (AND), || (OR), ! (NOT)
         int idade = 29;
         float salario = 3500F;
         boolean IsDentroDaLeiMaiorQueTrinta = idade > 30 && salario >= 4612;
         boolean IsDentroDaLeiMenorQueTrinta = idade < 30 && salario >= 3381;
-        System.out.println("IsDentroDaLeiMaiorQueTrinta "+IsDentroDaLeiMaiorQueTrinta);
-        System.out.println("IsDentroDaLeiMenorQueTrinta "+IsDentroDaLeiMenorQueTrinta);
+        System.out.println("IsDentroDaLeiMaiorQueTrinta " + IsDentroDaLeiMaiorQueTrinta);
+        System.out.println("IsDentroDaLeiMenorQueTrinta " + IsDentroDaLeiMenorQueTrinta);
+
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+        float valorPlaystation = 5000;
+        boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
+
+        System.out.println("isPlaystationCincoCompravel "+isPlaystationCincoCompravel);
     }
 }
