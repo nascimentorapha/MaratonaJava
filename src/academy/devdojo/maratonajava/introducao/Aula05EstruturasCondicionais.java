@@ -12,10 +12,6 @@ public class Aula05EstruturasCondicionais {
         if(!isAutorizadoComprarBebida){
             System.out.println("Não autorizado a comprar bebida alcóolica");
         }
-        boolean c = false;
-        if (c = true){
-            System.out.println("Dentro de algo que nunca deve ser feito");
-        }
 
         System.out.println("Fora do if");
     }
