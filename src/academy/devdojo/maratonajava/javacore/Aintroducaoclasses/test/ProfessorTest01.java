@@ -8,6 +8,6 @@ public class ProfessorTest01 {
         professor.nome = "Mestre kame";
         professor.idade = 145;
         professor.sexo = 'M';
-        System.out.println("Nome: "professor.nome + ", idade: " + professor.idade + ", sexo:" + professor.sexo);
+        System.out.println("Nome: " + professor.nome + ", idade: " + professor.idade + ", sexo:" + professor.sexo);
     }
 }
