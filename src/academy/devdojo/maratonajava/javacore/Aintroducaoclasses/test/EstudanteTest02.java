@@ -14,7 +14,7 @@ public class EstudanteTest02 {
         System.out.println(estudante.sexo);
 
         System.out.println("--------------");
-        
+
         System.out.println(estudante2.nome);
         System.out.println(estudante2.idade);
         System.out.println(estudante2.sexo);
