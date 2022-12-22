@@ -13,7 +13,7 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public void setIdade(int idade){
+    public void setIdade(int idade) {
         if (idade < 0) {
             System.out.println("Idade inválida");
             return;
@@ -21,11 +21,11 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public int getIdade(){
+    public int getIdade() {
         return idade;
     }
 }

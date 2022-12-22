@@ -10,6 +10,6 @@ public class PessoaTest01 {
 
         System.out.println(pessoa.getNome());
         System.out.println(pessoa.getIdade());
-          
+
     }
 }
