@@ -5,12 +5,20 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
     public Anime(String nome, String tipo, int episodios, String genero){
+        this(); //constructor overload
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
         this.genero = genero;
+    }
+
+    public Anime(String nome, String tipo, int episodios, String genero, String estudio){
+        //constructor overload. Need to be the first code line in constructors.
+        this(nome, tipo, episodios, genero);
+        this.estudio = estudio;
     }
 
     public Anime(){
@@ -24,7 +32,7 @@ public class Anime {
     }
 
     public void init(String nome, String tipo, int episodios, String genero) {
-        this.init(nome, tipo, episodios);
+        this.init(nome, tipo, episodios); //method overload
         this.genero = genero;
     }
 
@@ -33,6 +41,7 @@ public class Anime {
         System.out.println(this.tipo);
         System.out.println(this.episodios);
         System.out.println(this.genero);
+        System.out.println(this.estudio);
     }
 
 
