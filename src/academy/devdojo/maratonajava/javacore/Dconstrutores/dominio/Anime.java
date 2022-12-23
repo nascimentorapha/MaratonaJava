@@ -1,13 +1,14 @@
 package academy.devdojo.maratonajava.javacore.Dconstrutores.dominio;
 
 public class Anime {
+    //attributes
     private String nome;
     private String tipo;
     private int episodios;
     private String genero;
     private String estudio;
 
-    public Anime(String nome, String tipo, int episodios, String genero){
+    public Anime(String nome, String tipo, int episodios, String genero){ //constructor
         this(); //constructor overload
         this.nome = nome;
         this.tipo = tipo;
@@ -15,8 +16,8 @@ public class Anime {
         this.genero = genero;
     }
 
-    public Anime(String nome, String tipo, int episodios, String genero, String estudio){
-        //constructor overload. Need to be the first code line in constructors.
+    public Anime(String nome, String tipo, int episodios, String genero, String estudio){ //constructor overload
+        //Need to be the first code line in constructors.
         this(nome, tipo, episodios, genero);
         this.estudio = estudio;
     }
@@ -25,14 +26,14 @@ public class Anime {
 
     }
 
-    public void init(String nome, String tipo, int episodios) {
+    public void init(String nome, String tipo, int episodios) { //method initialization
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
     }
 
-    public void init(String nome, String tipo, int episodios, String genero) {
-        this.init(nome, tipo, episodios); //method overload
+    public void init(String nome, String tipo, int episodios, String genero) { //method overload
+        this.init(nome, tipo, episodios);
         this.genero = genero;
     }
 
@@ -44,7 +45,7 @@ public class Anime {
         System.out.println(this.estudio);
     }
 
-
+// Getters and Setters. The last methods in a class
     public String getNome() {
         return nome;
     }
