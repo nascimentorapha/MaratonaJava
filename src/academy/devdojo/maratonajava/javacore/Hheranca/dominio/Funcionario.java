@@ -2,13 +2,20 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 public class Funcionario extends Pessoa{
 
-    private double Salario;
+    private double salario;
 
-    public double getSalario() {
-        return Salario;
+    public void imprime(){
+        super.imprime(); //executa primeiro o método da classe pai, então este a seguir
+        System.out.println(this.salario);
     }
 
+    public double getSalario() {
+        return salario;
+    }
+
+
+
     public void setSalario(double salario) {
-        Salario = salario;
+        this.salario = salario;
     }
 }
